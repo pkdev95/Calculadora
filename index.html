@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet"  href="style.css">
+    
+</head>
+
+<body>
+    <div class="calc">
+        <h1>Calculadora(eu sou a noite)</h1>
+        <div class="opt">
+            <h2 class="sp">Escolha uma operação:</h2>
+            <select onchange="escolhaOperacao()" id="slct" class="slc">
+                <option>selecione</option>
+                <option>adição</option>
+                <option>subtração</option>
+                <option>multiplicação</option>
+                <option>divisão</option>
+            </select><br><br>
+        </div>
+        <form id="fm" action="" method="get">
+        <Label for="num1">Insira um número:</Label>
+        <input type="number" id="num1"  name="num1"  />
+        <p id="opr"></p>
+        <label for="num2">insira um número:</label>
+        <input type="number" id="num2"  name="num2"  />
+        <input type="button" onclick="calculo()" id="btn" value="calcular">
+        <p class="fn">Resultado: <span id="rs"></span></p>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
