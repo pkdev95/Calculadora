@@ -1,4 +1,6 @@
 
+
+
 const escolhaOperacao = () => {
 
   let slct = document.getElementById('slct');
@@ -9,29 +11,29 @@ const escolhaOperacao = () => {
   }
 
 
-  if (slct.options[slct.selectedIndex].text === "selecione"){
+  if (slct.options[slct.selectedIndex].text === "Selecione"){
     
     operacao.style.visibility = "hidden";
 
-  } else if (slct.options[slct.selectedIndex].text === "adição") {
+  } else if (slct.options[slct.selectedIndex].text === "Adição") {
     
-    operacao.innerHTML = "+";
+    operacao.innerHTML = '<i class="fa-solid fa-plus fa-beat fa-2xl"></i>';
     visibilityON();
 
-  } else if (slct.options[slct.selectedIndex].text === "subtração") {
+  } else if (slct.options[slct.selectedIndex].text === "Subtração") {
 
-    operacao.innerHTML = "-";
+    operacao.innerHTML =  '<i class="fa-solid fa-minus fa-fade fa-2xl"></i>';
     visibilityON();
 
-  } else if (slct.options[slct.selectedIndex].text === "multiplicação") {
+  } else if (slct.options[slct.selectedIndex].text === "Multiplicação") {
 
-    operacao.innerHTML = "x";
-    visibilityON();
+    operacao.innerHTML = '<i class="fa-solid fa-x fa-shake fa-2xl"></i>';
+    visibilityON();;
    
 
-  } else if (slct.options[slct.selectedIndex].text === "divisão") {
+  } else if (slct.options[slct.selectedIndex].text === "Divisão") {
 
-    operacao.innerHTML = "÷";
+    operacao.innerHTML = '<i class="fa-solid fa-divide fa-beat fa-2xl"></i>';
     visibilityON();
    
   } 
@@ -49,34 +51,34 @@ const calculo = () => {
     document.getElementById('num2').value = '';
   }
 
-if (slct.options[slct.selectedIndex].text === "selecione"){
-
- alert('escolha uma operação primeiro')
+if (slct.options[slct.selectedIndex].text === "Selecione"){
+ 
+ Swal.fire('Escolha uma operação primeiro');
     
 }else if(isNaN(num1) || isNaN(num2)){
-  alert('por favor preencha todos os campos');
+  Swal.fire('Por favor, preencha todos os campos');
 
-}else if (slct.options[slct.selectedIndex].text === "adição") {
+}else if (slct.options[slct.selectedIndex].text === "Adição") {
 
     let soma = num1 + num2;
     resultado.innerHTML =  soma;
     zerarInput();
    
-  } else if (slct.options[slct.selectedIndex].text === "subtração") {
+  } else if (slct.options[slct.selectedIndex].text === "Subtração") {
 
     let subtracao = num1 - num2;
     resultado.innerHTML =  subtracao;
     zerarInput();
 
 
-  } else if (slct.options[slct.selectedIndex].text === "multiplicação") {
+  } else if (slct.options[slct.selectedIndex].text === "Multiplicação") {
 
     let multiplicacao = num1 * num2;
     resultado.innerHTML =  multiplicacao;
     zerarInput();
     
 
-  } else if (slct.options[slct.selectedIndex].text === "divisão") {
+  } else if (slct.options[slct.selectedIndex].text === "Divisão") {
     let divisao = num1 / num2;
     resultado.innerHTML = divisao;
     zerarInput();

@@ -2,10 +2,14 @@ div{
     width:30%;
     height: 50%;
     margin: 0 auto;
-    background-image:url("https://files.tecnoblog.net/wp-content/uploads/2021/04/Qual-a-ordem-cronologica-dos-filmes-do-Batman-Deny-Freeman-Flickr.jpg");
     color: white;
     display: flex;
     flex-wrap: wrap;
+}
+
+#unic{
+    background-image:url("https://files.tecnoblog.net/wp-content/uploads/2021/04/Qual-a-ordem-cronologica-dos-filmes-do-Batman-Deny-Freeman-Flickr.jpg");
+    background-size: cover;
 }
 
 #fm{
@@ -24,10 +28,12 @@ input[type='button']{
 
 .sp{
     font-size: 20px;
+    margin-left: 5%;
 }
 
 .opt{
-    width:55%
+    width:55%;
+    background-image: none;
 }
 
 .slc{
@@ -78,8 +84,6 @@ div{
     margin-right: 15%;
     margin-top: 2%;
 }
-
-h1{ margin-left: 5%;
 
 }
 
